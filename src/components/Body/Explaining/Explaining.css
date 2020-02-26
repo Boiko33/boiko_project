@@ -1,0 +1,13 @@
+.alert {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2em;
+    position: relative;
+    left: 15%;
+}
+
+.alert hr {
+    border-top: 2px solid silver;
+    margin-top: 0.3em;
+    margin-bottom: 2em
+}

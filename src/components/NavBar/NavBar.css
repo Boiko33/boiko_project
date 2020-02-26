@@ -1,0 +1,16 @@
+.navbar-brand img {
+    width: 150px;
+    height: 100px;;
+}
+
+.navbar-nav li{
+    padding-right: 40px;
+    
+}
+
+.nav-link {
+    font-size: 1.1em;
+    
+}
+
+

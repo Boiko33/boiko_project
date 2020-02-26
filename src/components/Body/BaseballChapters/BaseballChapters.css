@@ -1,0 +1,15 @@
+.padding {
+    padding-bottom: 2em;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.chapterIcons {
+    width: 10em;
+    height: 10em;
+    margin: 1em;
+}

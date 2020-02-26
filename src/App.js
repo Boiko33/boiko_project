@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import Body from './components/Body/Body';
+import Footer from './components/Footer/Footer';
+import { Route, BrowserRouter } from 'react-router-dom';
+import AboutMe from './components/NavBar/AboutMe/AboutMe';
+import Blog from './components/NavBar/Blog/Blog';
+import OnlineBlock from './components/NavBar/OnlineBlock/OnlineBlock';
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="body">
+      <NavBar />
+      <Route component={AboutMe} path="/aboutme"></Route>
+      <Route component={Body} path="/main"></Route>
+      <Route component={Blog} path="/blog"></Route>
+      <Route component={OnlineBlock} path="/online"></Route>
+      <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 
