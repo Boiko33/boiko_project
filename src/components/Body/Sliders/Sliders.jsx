@@ -3,6 +3,7 @@ import image1 from "./../../../image/1.jpg";
 import image2 from "./../../../image/2.jpg";
 import image3 from "./../../../image/3.jpg";
 import "./Sliders.css";
+import { NavLink } from 'react-router-dom';
 
 const Sliders = () => {
     return (
@@ -18,7 +19,7 @@ const Sliders = () => {
                     <div className="carousel-caption">
                         <h1 className="display-2">Бейсбольный блог</h1>
                         <h3>Будьте бейсбольнее</h3>
-                        <a href="/blog" ><button className="btn btn-danger btn-lg" type="button">Блог</button></a>
+                        <NavLink to="/blog" ><button className="btn btn-danger btn-lg" type="button">Блог</button></NavLink>
                     </div>
                 </div>
                 <div className="carousel-item others">

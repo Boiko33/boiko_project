@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutMe.css";
-import me_2 from "./../../../image/me_2.jpg";
 import OwnCoach from "./OwnCoach/OwnCoach";
 import HardWork from "./HardWork/HardWork";
 import Conclusion from "./Conclusion/Conclusion";
+import MapComponent from './MapComponent/MapComponent';
 
 const AboutMe = () => {
     return (
@@ -11,6 +11,7 @@ const AboutMe = () => {
         <OwnCoach />
         <HardWork />
         <Conclusion />
+        <MapComponent />
         </div>
     );
 }

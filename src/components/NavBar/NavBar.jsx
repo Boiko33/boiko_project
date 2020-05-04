@@ -5,25 +5,25 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-            <div class="container-fluid">
-                <a href="/main" class="navbar-brand"><img src={logo} alt="logo"></img></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div className="container-fluid">
+                <NavLink to="/main" className="navbar-brand"><img src={logo} alt="logo"></img></NavLink>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto" >
-                    <li class="nav-item active">
-                        <NavLink to="/main"><a class="nav-link">Главная</a></NavLink>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                <ul className="navbar-nav ml-auto" >
+                    <li className="nav-item active">
+                        <NavLink to="/main" className="nav-link">Главная</NavLink>
                     </li>
-                    <li class="nav-item ">
-                        <NavLink  to="/aboutme"><a class="nav-link">Обо мне</a></NavLink>
+                    <li className="nav-item ">
+                        <NavLink  to="/aboutme" className="nav-link">Обо мне</NavLink>
                     </li>
-                    <li class="nav-item ">
-                        <NavLink to="/blog"><a className="nav-link">Блог</a></NavLink>
+                    <li className="nav-item ">
+                        <NavLink to="/blog" className="nav-link">Блог</NavLink>
                     </li>
-                    <li class="nav-item ">
-                        <NavLink to="/online"><a class="nav-link">Онлайн обучение</a></NavLink>
+                    <li className="nav-item ">
+                        <NavLink to="/online" className="nav-link">Онлайн обучение</NavLink>
                     </li>
 
                 </ul>

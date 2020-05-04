@@ -3,6 +3,7 @@ import "./OnlineLearning.css";
 import SeniorImage from "./../../../image/card_1.jpg";
 import ProspectImage from "./../../../image/card_2.jpeg";
 import AdultImage from "./../../../image/card_3.webp";
+import { Link } from "react-router-dom";
 
 
 const OnlineLearning = () => {
@@ -27,7 +28,7 @@ const OnlineLearning = () => {
                                 <h4 className="card-title">Seniors (12-15 лет)</h4>
                                 <p className="card-text">Обучение базовым бейсбольным навыкам, путем обучения бейсбольной
                                 техники.</p>
-                                <a href="/online" className="btn btn-warning">Далее</a>
+                                <Link to="/online" className="btn btn-warning">Далее</Link>
                             </div>
                         </div>
                     </div>
@@ -38,7 +39,7 @@ const OnlineLearning = () => {
                                 <h4 className="card-title">Prospects (16-19 лет)</h4>
                                 <p className="card-text">Максимально возможное физическое развитие специфических бейсбольных
                                 навыков путем глубокого анализа техники игрока.</p>
-                                <a href="/online" className="btn btn-warning">Далее</a>
+                                <Link to="/online" className="btn btn-warning">Далее</Link>
                             </div>
                         </div>
                     </div>
@@ -49,7 +50,7 @@ const OnlineLearning = () => {
                                 <h4 className="card-title">Adults (20+ лет)</h4>
                                 <p className="card-text">Развитие бейсбольных навыков, используя сильные стороны взрослого
                                 игрока.</p>
-                                <a href="/online" className="btn btn-warning">Далее</a>
+                                <Link to="/online" className="btn btn-warning">Далее</Link>
                             </div>
                         </div>
                     </div>

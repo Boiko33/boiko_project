@@ -1,0 +1,13 @@
+.card div .card-header .btn {
+    float: right;
+}
+
+.card-body__div {
+        position: relative;
+         border-radius: 0;
+         width: 100%;
+         margin: 0 auto;
+         margin-top: 20px;
+        text-align: justify;
+     }
+     
