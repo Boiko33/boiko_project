@@ -1,10 +1,11 @@
 import React from "react";
-import WeatherButton from "./WeatherButton";
-import WeatherInfo from "./WeatherInfo";
+import WeatherButtonSecond from './WeatherButtonSecond';
+import WeatherInfoSecond from './WeatherInfoSecond';
+import "./../AboutMe.css"
 
 const API_KEY = "83d136d27c47cb2304ff75c17a631a9d";
 
-class WeatherWidget extends React.Component {
+class WeatherWidgetSecond extends React.Component {
     state = {
         city: undefined,
         temp: undefined,
@@ -27,9 +28,9 @@ class WeatherWidget extends React.Component {
     }
     render() {
         return (
-            <div>
-                <WeatherButton weatherMethod={this.gettingWeather} />
-                <WeatherInfo
+            <div className="weatherWidgetSecond col-xs-12 col-sm-12 col-md-3 col-xl-3">
+                <WeatherButtonSecond weatherMethod={this.gettingWeather} />
+                <WeatherInfoSecond
                     city={this.state.city}
                     temp={this.state.temp}
                     feels={this.state.feels}
@@ -40,4 +41,4 @@ class WeatherWidget extends React.Component {
     }
 }
 
-export default WeatherWidget;
+export default WeatherWidgetSecond;

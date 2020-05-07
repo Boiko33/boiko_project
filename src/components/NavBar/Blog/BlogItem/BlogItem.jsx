@@ -1,56 +1,55 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import './BlogItem.css';
 
-class BlogItem extends Component {
-    constructor(props) {
-        super(props)
+const BlogItem = (props) => {
 
-        this.state = {
-            isOpen: props.defaultOpen
-        }
 
+    const [isOpen, setIsOpen] = useState(props.defaultOpen)
+
+
+    let handleClick = () => {
+        let changeOpen = !isOpen
+        return (
+            changeOpen
+        )
     }
 
-    render() {
-        const text = this.state.isOpen &&
+
+    const text = isOpen &&
+        <div>
+            {props.text}
+        </div>
+    return (
+        <div className="card mx-auto card-body__div" style={{ width: "70%" }}>
             <div>
-                {this.props.text}
-            </div>
-        return (
-            <div className="card mx-auto card-body__div" style={{width: "70%"}}>
-                <div>
-                    <div className="card-header">
-                        <div className="date">
-                            <h6>
-                                {this.props.date}
-                            </h6>
-                        </div>
-                        <div>
-                            <h2>
-                            {this.props.title}
-                            <button className="btn btn-primary btn-lg" onClick={this.handleClick}>
-                            {this.state.isOpen ? "закрыть" : "открыть"}
-                        </button>
-                            </h2>
-                        </div>
-                        
+                <div className="card-header">
+                    <div className="date">
+                        <h6>
+                            {props.date}
+                        </h6>
+                    </div>
+                    <div>
+                        <h2>
+                            {props.title}
+                            <button className="btn btn-primary btn-lg" onClick={() => setIsOpen(handleClick)}>
+                                {isOpen ? "закрыть" : "открыть"}
+                            </button>
+                        </h2>
+                    </div>
 
 
-                    </div>
-                    <div className="card-body">
-                        {text}
-                    </div>
+
+                </div>
+                <div className="card-body">
+                    {text}
                 </div>
             </div>
-        );
-    }
-
-
-    handleClick = () => {
-        this.setState({
-            isOpen: !this.state.isOpen
-        })
-    }
+        </div>
+    );
 }
+
+
+
+
 
 export default BlogItem;

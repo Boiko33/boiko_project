@@ -2,7 +2,7 @@ import React from "react";
 import "./Blog.css";
 import BlogItem from "./BlogItem/BlogItem";
 
-function Blog (props) {
+const Blog  = (props)  => {
 
     let blogElements =
         props.blogData.map((blog, index) =>
