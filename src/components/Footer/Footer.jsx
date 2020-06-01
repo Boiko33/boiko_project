@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Footer.css"
-import inst from "./../../image/inst.jfif"
 
 const Footer = () => {
     return (

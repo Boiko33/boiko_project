@@ -8,12 +8,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import store from "./store";
 import { BrowserRouter } from 'react-router-dom';
 import { ScrollToTop } from "./store.js";
+import { WeatherContextProvider } from './WeatherContext';
 
 
 ReactDOM.render(
     <BrowserRouter>
-        <ScrollToTop />
-        <App blogData={store.state.blogData} />
+        <WeatherContextProvider>
+            <ScrollToTop />
+            <App blogData={store.state.blogData} />
+        </WeatherContextProvider>
     </BrowserRouter>
     , document.getElementById('root'));
 
